@@ -6,7 +6,7 @@ Este documento simula a documentação profissional de falhas encontradas durant
 
 ## BUG-001: Ausência de Validação Visual no Campo de E-mail
 
-**Feature:** Formulário de Contato (ag.tavardt.com/br/contato) 
+**Feature:** Formulário de Contato (ag.tavardt.com/br/contato)  
 **Ambiente:** Chrome 120 (Desktop 1080p) / Windows 11  
 **Severidade:** 🟠 Média  
 **Prioridade:** Alta  
