@@ -35,7 +35,7 @@ test.describe('Localization - Redirecionamento de Idioma (PT)', () => {
 });
 
 test.describe('Localization - Redirecionamento de Idioma (ES)', () => {
-  // Simulando um navegador configurado em Espenhol
+  // Simulando um navegador configurado em Espanhol
   test.use({ locale: 'es' });
 
   test('Deve carregar a versão em Espanhol quando o locale for es', async ({ page }) => {
