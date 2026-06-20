@@ -1,10 +1,10 @@
-# 🚀 Portfólio de Quality Assurance (QA)
+# Portfólio de Quality Assurance (QA)
 
 Bem-vindo ao meu portfólio de automação e engenharia de qualidade. 
 
 Este repositório serve como evidência prática das minhas habilidades como Analista de Testes Automatizados (QA), abrangendo desde a **estratégia e mapeamento manual de cenários** até a construção de **pipelines de automação E2E e API**.
 
-## 🏗️ Arquitetura do Repositório (Multi-Client)
+## Arquitetura do Repositório (Multi-Client)
 
 Para demonstrar escalabilidade e organização de nível empresarial, este repositório adota um padrão arquitetural onde os testes são isolados por "clientes" ou "projetos".
 
@@ -18,20 +18,20 @@ qa/
 │   ├── e2e/                  # Automação Web (Playwright + TypeScript)
 │   └── api/                  # Automação de API (Postman / Newman)
 │
-├── globo/                    # [Cliente 2] ...
+├── client2/                  # [Cliente 2] ...
 │   └── ...
-└── uol/                      # [Cliente 3] ...
+└── client3/                  # [Cliente 3] ...
     └── ...
 ```
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 - **Planejamento:** Markdown, Guias de Cobertura e Estratégia de Qualidade.
-- **Automação Web UI:** [Playwright](https://playwright.dev/) com TypeScript (Pattern: Page Objects).
-- **Automação API:** [Postman](https://www.postman.com/) (Testes em coleções exportadas).
+- **Automação Web UI:** Playwright com TypeScript (Pattern: Page Objects).
+- **Automação API:** Postman (Testes em coleções exportadas).
 - **Integração Contínua:** GitHub Actions para execução de testes em nuvem a cada alteração no código.
 
-## 🎯 Objetivo
+## Objetivo
 
 Demonstrar as competências críticas exigidas no dia a dia de um profissional de QA:
 1. **Pensamento Crítico:** Saber O QUE testar antes de saber COMO testar (Casos Específicos e Limites).
