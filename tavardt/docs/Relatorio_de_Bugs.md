@@ -8,7 +8,7 @@ Este documento simula a documentação profissional de falhas encontradas durant
 
 **Feature:** Formulário de Contato (ag.tavardt.com/br/contato)  
 **Ambiente:** Chrome 120 (Desktop 1080p) / Windows 11  
-**Severidade:** 🟠 Média  
+**Severidade:** Média  
 **Prioridade:** Alta  
 **Status:** Aberto  
 
