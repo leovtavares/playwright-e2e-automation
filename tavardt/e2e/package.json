@@ -8,11 +8,18 @@
     "test:ui": "playwright test --ui",
     "test:report": "playwright show-report"
   },
-  "keywords": ["qa", "playwright", "tavardt"],
+  "keywords": [
+    "qa",
+    "playwright",
+    "tavardt"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.3"
   }
 }
