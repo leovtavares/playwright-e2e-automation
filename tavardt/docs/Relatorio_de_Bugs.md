@@ -30,7 +30,7 @@ A página não apresenta indicação visual de erro sob o campo de e-mail. A req
 ### Resultado Esperado
 O sistema deveria aplicar uma máscara ou validação no frontend e, ao clicar no botão ou perder o foco do campo (blur), exibir um alerta visual imediato ("Por favor, insira um endereço de e-mail válido") mantendo a consistência do design do site.
 
-### 📎 Evidências
+### Evidências
 - **Vídeo da execução:** `[Link-Loom-Placeholder]`
 - **Log do Console:** Nenhuma exceção capturada no Console do DevTools.
 - **Requisições de Rede:** Nenhum *Payload* disparado na aba Network.
