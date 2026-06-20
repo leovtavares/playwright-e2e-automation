@@ -16,8 +16,8 @@ Este documento simula a documentação profissional de falhas encontradas durant
 Ao tentar submeter o formulário de contato com um e-mail com formato inválido (ex: ausência do "@" ou domínio), a aplicação não exibe um feedback visual de erro de formulário (ex: texto em vermelho indicando formato inválido) antes da submissão. O formulário não avança, porém o usuário fica sem feedback visível.
 
 ### Passos para Reproduzir
-1. Acessar a página raiz `https://ag.tavardt.com`.
-2. Navegar até a seção do formulário de contato.
+1. Acessar a página raiz `https://ag.tavardt.com/br`.
+2. Navegar até a seção do formulário de contato (/contato).
 3. Preencher o campo "Nome Completo" com um valor válido (ex: "Teste QA").
 4. Preencher o campo "Email Profissional" com um valor inválido (ex: `testesemarrobadominio.com`).
 5. Preencher o campo "Empresa" com um valor válido (ex: "Google").
