@@ -21,9 +21,11 @@ test.describe('Formulário de Contato - Validações', () => {
 
   test('Deve preencher e validar os inputs do formulário com sucesso', async ({ page }) => {
     // Placeholder: Interagindo com os inputs
-    // await page.fill('input[name="nome"]', 'Analista QA (Teste Automatizado)');
+    // await page.fill('input[name="name"]', 'Analista QA (Teste Automatizado)');
     // await page.fill('input[name="email"]', 'qa-teste@tavardt.com');
-    // await page.fill('textarea[name="mensagem"]', 'Testando pipeline automatizado com Playwright.');
+    // await page.fill('input[name="company"]', 'Google');
+    // await page.fill('select[name="service"]', 'Todos / Outros');
+    // await page.fill('textarea[name="message"]', 'Testando pipeline automatizado com Playwright.');
     
     // await page.locator('button[type="submit"]').click();
     
