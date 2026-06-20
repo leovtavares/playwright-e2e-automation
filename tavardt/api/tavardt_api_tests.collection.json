@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+		"name": "TAVARDT - API Tests",
+		"description": "Suite de testes de API para a plataforma ag.tavardt.com. Focado principalmente em testar as chamadas assíncronas do formulário de contato.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Formulário de Contato",
+			"item": [
+				{
+					"name": "Enviar Formulário (Sucesso)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 2000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"// Placeholder: Ajuste as chaves de acordo com a resposta real da sua API",
+									"// pm.test(\"Verify success message in body\", function () {",
+									"//     var jsonData = pm.response.json();",
+									"//     pm.expect(jsonData.success).to.eql(true);",
+									"// });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"QA Test\",\n    \"email\": \"qa@tavardt.com\",\n    \"mensagem\": \"Teste de automação de API via Postman/Newman.\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/contact",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enviar Formulário (Falha de Validação)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400 Bad Request\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"// Placeholder: Verifica se a API retorna um erro específico",
+									"// pm.test(\"Verify error message in body\", function () {",
+									"//     var jsonData = pm.response.json();",
+									"//     pm.expect(jsonData).to.have.property('error');",
+									"// });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"\",\n    \"email\": \"email-invalido\",\n    \"mensagem\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/contact",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://ag.tavardt.com",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+name: QA E2E Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  # Permite rodar manualmente a pipeline
+  workflow_dispatch:
+
+jobs:
+  test-tavardt:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./tavardt/e2e
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        
+    - name: Instalar dependências
+      run: npm ci
+      
+    - name: Instalar navegadores do Playwright
+      run: npx playwright install --with-deps
+      
+    - name: Executar testes E2E do Playwright
+      run: npx playwright test
+      
+    - name: Fazer upload do relatório de testes
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report-tavardt
+        path: tavardt/e2e/playwright-report/
+        retention-days: 15
