@@ -44,7 +44,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"QA Test\",\n    \"email\": \"qa@tavardt.com\",\n    \"mensagem\": \"Teste de automação de API via Postman/Newman.\"\n}"
+							"raw": "{\n    \"name\": \"QA Test\",\n    \"email\": \"qa@tavardt.com\",\n    \"company\": \"Google\",\n    \"service\": \"Todos / Outros\",\n    \"message\": \"Teste de automação de API via Postman/Newman.\"\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/contact",
@@ -90,7 +90,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"\",\n    \"email\": \"email-invalido\",\n    \"mensagem\": \"\"\n}"
+							"raw": "{\n    \"name\": \"\",\n    \"email\": \"email-invalido\",\n    \"company\": \"\",\n    \"service\": \"\",\n    \"message\": \"\"\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/contact",
@@ -111,7 +111,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "https://ag.tavardt.com",
+			"value": "https://ag.tavardt.com/br/contato",
 			"type": "string"
 		}
 	]
