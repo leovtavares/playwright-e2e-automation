@@ -5,14 +5,13 @@ Este documento descreve a estratégia de testes, escopo, abordagens e critérios
 
 ## 2. Escopo
 As seguintes funcionalidades estão **dentro do escopo** de validação:
-- Sistema de Redirecionamento de Idioma baseado no *locale* do usuário (PT-BR vs EN).
+- Sistema de Redirecionamento de Idioma baseado no *locale* do usuário (EN / PT-BR / PT / ES / FR / IT).
 - Validações de frontend e envio do Formulário de Contato.
 - Renderização visual básica e elementos interativos essenciais do formulário.
 
 As seguintes funcionalidades estão **fora do escopo**:
 - Testes de carga e performance (Stress Test).
 - Testes de segurança e penetração (Pentest).
-- Funcionalidades de back-office ou CRM (Perfex/Mautic) que recebem o lead, a não ser que o webhook de resposta seja avaliado via API.
 
 ## 3. Tipos de Teste e Estratégia
 A abordagem envolverá testes de caixa preta focados em usabilidade e regras de negócio:
