@@ -6,7 +6,6 @@ Este diretório contém um **Estudo de Caso de Quality Assurance** focado em um 
 - Testes exploratórios e mapeamento de fluxos reais.
 - Criação de cenários BDD baseados em comportamento, incluindo autenticação.
 - Estratégia de testes de API e reporte técnico de falhas.
-- Uso de Inteligência Artificial para geração de edge cases.
 
 ## Contexto do Negócio
 
@@ -23,7 +22,6 @@ Os artefatos deste case foram divididos para cobrir as principais etapas do cicl
 2. [**Casos de Teste em BDD**](2_bdd_test_cases.md): Transformação de regras de negócio (filtros de condição, carrinho e autenticação) em cenários executáveis Gherkin.
 3. [**Template de Bug Report**](3_bug_report_template.md): Padrão corporativo de documentação de falhas para facilitar o trabalho dos desenvolvedores.
 4. [**Estratégia de API (Postman)**](4_api_postman_strategy.md): Inspeção de rede e montagem de requests para validação de integrações e backend.
-5. [**IA como Aliada de QA**](5_ai_usage_prompts.md): Como Prompts de Inteligência Artificial foram usados para mitigar riscos de cenários alternativos.
 
 ---
 *Construído com foco em qualidade de produto, segurança e alinhamento às regras de negócio corporativas.*
