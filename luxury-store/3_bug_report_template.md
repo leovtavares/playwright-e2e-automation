@@ -4,22 +4,22 @@ A descrição da vaga pontua explicitamente: "Abrir bugs com clareza, contexto e
 
 ---
 
-## [Bug] Quebra de Layout e Erro de Validação no Input de CEP no Carrinho
+## [Bug] Quebra de Layout e Erro de Validação no Input de CEP no Carrinho  
 
-**ID:** BUG-402
-**Status:** Aberto
-**Prioridade:** Alta (Impede fluxo de compra/UX ruim no Cart)
-**Severidade:** Major
-**Módulo:** Carrinho / API de Logística
+**ID:** BUG-402  
+**Status:** Aberto  
+**Prioridade:** Alta (Impede fluxo de compra/UX ruim no Cart)  
+**Severidade:** Major  
+**Módulo:** Carrinho / API de Logística  
 
 ### Descrição
 Ao inserir um CEP com caracteres especiais não padronizados (ex: "01001#000") no campo de cálculo de frete na página do Carrinho, o sistema permite a requisição, o servidor retorna erro 500 e o layout do box de cálculo "quebra" (botão sai do alinhamento), não fornecendo um feedback adequado para o cliente corrigir o dado.
 
-### Ambiente
-- **OS:** Windows 11 / iOS 17.2
-- **Browser:** Google Chrome (v121.0) / Safari Mobile
-- **URL:** `www.[lojadeluxo].com.br/cart`
-- **Conta de Teste:** `qa.teste@exemplo.com`
+### Ambiente  
+- **OS:** Windows 11 / iOS 17.2  
+- **Browser:** Google Chrome (v121.0) / Safari Mobile  
+- **URL:** `www.[lojadeluxo].com.br/cart`  
+- **Conta de Teste:** `qa.teste@exemplo.com`  
 
 ### Passos para Reproduzir
 1. Acesse o site e adicione qualquer item disponível ao carrinho.
