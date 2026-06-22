@@ -1,6 +1,6 @@
 # 3. Reporte de Bug Padrao Corporativo
 
-A descrição da vaga pontua explicitamente: "Abrir bugs com clareza, contexto e passos para reprodução". O documento abaixo é uma demonstração de como um analista crítico não apenas abre um "ticket" apontando um erro, mas sim fornece todo o contexto técnico para que o Desenvolvedor consiga reproduzir e corrigir sem precisar fazer reuniões adicionais.
+Este documento serve como modelo prático de documentação de falhas encontradas durante testes manuais ou exploratórios. O objetivo é fornecer contexto técnico detalhado e passos de reprodução claros para agilizar o processo de correção (debugging) pela equipe de engenharia.
 
 ---
 

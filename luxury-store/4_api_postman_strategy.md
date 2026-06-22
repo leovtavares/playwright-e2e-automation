@@ -1,8 +1,6 @@
 # 4. Estratégia de Testes de API (Postman)
 
-Requisito da Vaga: "Noções de testes de API usando ferramentas como Postman, Insomnia ou API Dog".
-
-Para comprovar que o conhecimento vai além da teoria, este documento detalha como um Analista de QA utiliza o Inspecionar (F12 > Network) do navegador para mapear o tráfego do e-commerce e validar os retornos do Backend de forma independente do Front-End.
+Este documento detalha o mapeamento do tráfego de rede do e-commerce e a validação dos contratos de Backend de forma independente do Front-End. A análise foi realizada através da inspeção de requisições e estruturação de coleções no Postman para garantir a integridade dos dados retornados.
 
 ## Mapeamento da API de Produtos
 
@@ -17,7 +15,7 @@ Ao buscar pela marca "Chanel" no site, o front-end dispara uma requisição GET 
   - `page=1`
 
 ### 2. Criação da Collection no Postman
-No Postman, criei uma requisição estruturada com variáveis de ambiente (`{{base_url}}`) para testar o contrato da API de forma isolada.
+Estruturação de requisições com variáveis de ambiente (`{{base_url}}`) para testar o contrato da API de forma isolada.
 
 **Testes Implementados no Postman (Aba "Tests" / JavaScript):**
 ```javascript
@@ -41,7 +39,7 @@ pm.test("Todos os produtos devem ser da marca Chanel", function () {
 ```
 
 ## Payload de Resposta (JSON)
-Uma validação de contrato deve garantir que o objeto retornado contém o status de curadoria.
+A validação de contrato garante que o objeto retornado contém o status correto de curadoria e estoque.
 
 ```json
 {
@@ -64,6 +62,3 @@ Uma validação de contrato deve garantir que o objeto retornado contém o statu
   }
 }
 ```
-
-### Por que isso importa para a Vaga?
-Se um usuário relatar que a vitrine está vazia, o QA que domina API não abre um bug dizendo "Site não funciona". Ele dispara a API no Postman e descobre se o erro é no Backend (a API caiu) ou no Front-End (o React/Vue não conseguiu renderizar o JSON). Isso acelera a resolução do ticket pela equipe de desenvolvimento.
