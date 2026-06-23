@@ -29,7 +29,7 @@ Os artefatos deste case foram divididos para cobrir as principais etapas do cicl
 
 > **Nota de Gestão de Testes:** Na prática corporativa diária, a rastreabilidade destes artefatos (cenários BDD e relatórios de bugs) seria gerida de ponta a ponta utilizando ferramentas de mercado focadas em QA, como Jira (integrado ao Zephyr/Xray) ou TestRail, garantindo visibilidade centralizada para toda a equipe ágil.
 
-## 🚀 Visão de Futuro: Automação e Pirâmide de Testes
+## Visão de Futuro: Automação e Pirâmide de Testes
 Embora o foco inicial deste case seja em testes funcionais, exploratórios e de API, a evolução natural do produto prevê a introdução de automação. Essa evolução seguirá o conceito da **Pirâmide de Testes** para garantir sustentabilidade:
 - **Base (Unitário/Integração):** Garantir que regras críticas (cálculo de descontos Pix/Cartão, bloqueio de estoque = 1) sejam cobertas por testes rápidos e isolados no backend.
 - **Topo (End-to-End / UI):** Reservar os testes de interface automatizados apenas para as jornadas críticas que trazem receita (Fluxo de Checkout e Login), evitando testes frágeis (flaky tests) e garantindo um pipeline de CI/CD eficiente.
