@@ -16,7 +16,7 @@ Este documento serve como modelo prático de documentação de falhas encontrada
 Ao inserir um CEP com caracteres especiais não padronizados (ex: "01001#000") no campo de cálculo de frete na página do Carrinho, o sistema permite a requisição, o servidor retorna erro 500 e o layout do box de cálculo "quebra" (botão sai do alinhamento), não fornecendo um feedback adequado para o cliente corrigir o dado.
 
 ### Ambiente  
-- **OS:** Windows 11 / iOS 17.2  
+- **OS:** Windows 11 / iOS 17.2 (iPhone 13 Pro)
 - **Browser:** Google Chrome (v121.0) / Safari Mobile  
 - **URL:** `www.[lojadeluxo].com.br/cart`  
 - **Conta de Teste:** `qa.teste@exemplo.com`  

@@ -25,3 +25,5 @@ Os artefatos deste case foram divididos para cobrir as principais etapas do cicl
 
 ---
 *Construído com foco em qualidade de produto, segurança e alinhamento às regras de negócio corporativas.*
+
+> **Nota de Gestão de Testes:** Na prática corporativa diária, a rastreabilidade destes artefatos (cenários BDD e relatórios de bugs) seria gerida de ponta a ponta utilizando ferramentas de mercado focadas em QA, como Jira (integrado ao Zephyr/Xray) ou TestRail, garantindo visibilidade centralizada para toda a equipe ágil.
