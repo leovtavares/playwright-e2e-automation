@@ -42,7 +42,7 @@ test.describe('Postman Web - Identity Module', () => {
     const uniqueBio = `QA Automation Test Bio ${Date.now()}`;
     await bioTextarea.fill(uniqueBio);
 
-    const updateBtn = page.locator('button:has-text("Update Profile"), button:has-text("Save")').first();
+    const updateBtn = page.getByRole('button', { name: /Update Profile|Save/i }).first();
     await updateBtn.click();
 
     // Aguarda o toast verde
@@ -51,8 +51,8 @@ test.describe('Postman Web - Identity Module', () => {
     // Se o toast aparecer mas os dados sumirem depois, é um Bug crítico de UI
     try {
       await successToast.waitFor({ state: 'visible', timeout: 5000 });
-    } catch(e) {
-      // Caso não exiba o toast, o bug mudou
+    } catch(e: any) {
+      console.log(`[PST-2044] Toast de sucesso não exibido no tempo limite. Detalhes: ${e.message}`);
     }
 
     // 6. VALIDAÇÃO DE PERSISTÊNCIA REAL (O Teste)

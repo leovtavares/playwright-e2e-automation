@@ -27,9 +27,13 @@ test.describe('CompTIA - Bug Regression', () => {
     // Isso forçaria a quebra do teste caso o bug CPT-9045 ainda estivesse ocorrendo em produção
     const jobList = page.locator('.job-roles-list, [data-testid="job-roles-container"]');
     
-    // Se estivéssemos testando o fix real, faríamos um expect.toBeVisible(). 
-    // Como o bug ainda existe (pela denúncia), este teste vai capturar a falha por timeout.
-    // await expect(jobList).toBeVisible({ timeout: 15000 });
+    // Declaramos que este teste DEVE falhar porque o Bug CPT-9045 ainda existe em Produção.
+    // Se o site consertar o bug e a lista renderizar (teste passar), a pipeline irá QUEBRAR
+    // para nos avisar que o bug foi resolvido!
+    test.fail();
+    
+    // A asserção aguarda até 15s para a lista aparecer. Se não aparecer, o teste falha (o que é esperado pelo test.fail).
+    await expect(jobList).toBeVisible({ timeout: 15000 });
     
     test.info().annotations.push({ 
       type: 'Regression Info', 

@@ -18,6 +18,8 @@ test.describe('Luxury Store - Checkout Flow', () => {
     });
 
     // 2. Montar a UI da página fake
+    // Navegamos para um origin dummy para que o fetch() no client-side não falhe por CORS (about:blank)
+    await page.goto('https://example.com');
     await page.setContent(`
       <html>
         <body>

@@ -17,6 +17,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
+    baseURL: 'https://tavardt.com',
     actionTimeout: 0,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
