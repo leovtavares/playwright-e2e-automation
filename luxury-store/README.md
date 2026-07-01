@@ -1,35 +1,49 @@
-# Case de Testes QA: E-commerce de Luxo (Peças Únicas)
+[🇺🇸 English](#english) | [🇧🇷 Português](#português)
 
-Este diretório contém um **Estudo de Caso de Quality Assurance** focado em um e-commerce de artigos de luxo seminovos. O objetivo deste portfólio é demonstrar proficiência nas habilidades essenciais de análise de qualidade, com foco em:
+<a id="english"></a>
+# Client: Luxury Store (Resale E-commerce)
 
-- Validação de regras de negócio complexas (estoque unitário e curadoria).
-- Testes exploratórios e mapeamento de fluxos reais.
-- Criação de cenários BDD baseados em comportamento, incluindo autenticação.
-- Estratégia de testes de API e reporte técnico de falhas.
+Welcome to the specific testing directory for a hypothetical **Luxury Resale E-commerce**. This project demonstrates my proficiency in handling complex business logic, concurrency issues, and building robust test architecture from scratch.
 
-## Contexto do Negócio
+## Critical Thinking & Testing Strategy
+Unlike traditional e-commerce platforms, luxury resale presents unique engineering challenges. I mapped the entire flow focusing on the highest risk areas:
+1. **Unitary Inventory (Concurrency):** Every item is a unique 1-of-1 piece (e.g., a specific vintage bag). A critical edge case is when two concurrent users attempt to buy the same item. The system must lock the stock and return a 409 Conflict to the second user.
+2. **Quality of the "Golden Path":** Because the average ticket size is extremely high, any bugs in the checkout or authentication funnel generate massive financial loss. 
 
-Diferente de um e-commerce tradicional, plataformas de resale de luxo possuem características únicas que impactam diretamente a engenharia de qualidade:
-1. **Estoque Unitário (1 peça):** Cada item é único. Problemas de concorrência (duas pessoas comprando o mesmo item) são críticos.
-2. **Curadoria e Autenticidade:** O valor da plataforma está na garantia de que a peça é original e no seu estado de conservação. Os filtros e descrições precisam ser infalíveis.
-3. **Alto Ticket Médio:** Bugs no fluxo de pagamento e autenticação geram alta frustração e perda financeira significativa.
+## Project Structure
 
-## Estrutura do Estudo de Caso
+- `/docs`: Contains the "QA Mindset" artifacts.
+  - `0_test_plan.md`: Comprehensive Test Strategy and Risk Matrix.
+  - `1_exploratory_mindmap.md`: Heuristics and system architecture mapping.
+  - `2_bdd_test_cases.md`: Executable Gherkin scenarios (Cart and Authentication rules).
+  - `3_bug_report_template.md`: Corporate defect reporting standard.
+  - `4_api_postman_strategy.md`: Network inspection and backend validation strategy.
+- `/e2e`: UI Automation Scripts using **Playwright** (TypeScript).
+  - `checkout.spec.ts`: An end-to-end script that mocks the backend to force and validate the "item already reserved" concurrency error on the UI.
+- `/api`: Backend Automation using **Postman**.
+  - `Cart_API_Collection.json`: A Newman-ready collection with JavaScript assertions ensuring the API correctly handles HTTP 409 Conflicts during simultaneous cart additions.
 
-Os artefatos deste case foram divididos para cobrir as principais etapas do ciclo de vida de testes de software:
+<br><br>
 
-0. [**Plano de Testes**](docs/0_test_plan.md): Escopo, estratégia, ambientes e matriz de riscos do ciclo de QA.
-1. [**Mapa Mental Exploratório**](docs/1_exploratory_mindmap.md): Visão sistêmica da arquitetura de testes e heurísticas aplicadas.
-2. [**Casos de Teste em BDD**](docs/2_bdd_test_cases.md): Transformação de regras de negócio (filtros de condição, carrinho e autenticação) em cenários executáveis Gherkin.
-3. [**Template de Bug Report**](docs/3_bug_report_template.md): Padrão corporativo de documentação de falhas para facilitar o trabalho dos desenvolvedores.
-4. [**Estratégia de API (Postman)**](docs/4_api_postman_strategy.md): Inspeção de rede e montagem de requests para validação de integrações e backend.
+<a id="português"></a>
+# Cliente: Luxury Store (E-commerce de Resale)
 
----
-*Construído com foco em qualidade de produto, segurança e alinhamento às regras de negócio corporativas.*
+Bem-vindo ao diretório de testes de um **E-commerce de Luxo (Seminovos)** hipotético. Este projeto demonstra minha proficiência em lidar com regras de negócio complexas, problemas de concorrência e a construção de uma arquitetura de testes robusta do zero.
 
-> **Nota de Gestão de Testes:** Na prática corporativa diária, a rastreabilidade destes artefatos (cenários BDD e relatórios de bugs) seria gerida de ponta a ponta utilizando ferramentas de mercado focadas em QA, como Jira (integrado ao Zephyr/Xray) ou TestRail, garantindo visibilidade centralizada para toda a equipe ágil.
+## Pensamento Crítico e Estratégia de Teste
+Diferente do e-commerce tradicional, o resale de luxo apresenta desafios únicos de engenharia. Mapeei todo o fluxo focando nas áreas de maior risco:
+1. **Estoque Unitário (Concorrência):** Cada item é uma peça única (1 de 1). O caso limite crítico ocorre quando dois usuários simultâneos tentam comprar o mesmo item. O sistema deve travar o estoque e retornar um Erro 409 Conflict para o segundo usuário.
+2. **Qualidade da "Jornada de Ouro":** Como o ticket médio é extremamente alto, qualquer bug no funil de checkout ou autenticação gera perdas financeiras maciças.
 
-## Visão de Futuro: Automação e Pirâmide de Testes
-Embora o foco inicial deste case seja em testes funcionais, exploratórios e de API, a evolução natural do produto prevê a introdução de automação. Essa evolução seguirá o conceito da **Pirâmide de Testes** para garantir sustentabilidade:
-- **Base (Unitário/Integração):** Garantir que regras críticas (cálculo de descontos Pix/Cartão, bloqueio de estoque = 1) sejam cobertas por testes rápidos e isolados no backend.
-- **Topo (End-to-End / UI):** Reservar os testes de interface automatizados apenas para as jornadas críticas que trazem receita (Fluxo de Checkout e Login), evitando testes frágeis (flaky tests) e garantindo um pipeline de CI/CD eficiente.
+## Estrutura do Projeto
+
+- `/docs`: Contém os artefatos do "Mindset de QA".
+  - `0_test_plan.md`: Estratégia Abrangente e Matriz de Riscos.
+  - `1_exploratory_mindmap.md`: Mapeamento de heurísticas e arquitetura sistêmica.
+  - `2_bdd_test_cases.md`: Cenários executáveis em Gherkin (Regras de Carrinho e Autenticação).
+  - `3_bug_report_template.md`: Padrão corporativo de reporte de defeitos.
+  - `4_api_postman_strategy.md`: Inspeção de rede e estratégia de validação de backend.
+- `/e2e`: Scripts de Automação de UI usando **Playwright** (TypeScript).
+  - `checkout.spec.ts`: Um script end-to-end que mocka o backend para forçar e validar se a UI exibe a falha de concorrência "item já reservado".
+- `/api`: Automação de Backend usando **Postman**.
+  - `Cart_API_Collection.json`: Uma coleção pronta para Newman, contendo validações em JavaScript para garantir que a API lide corretamente com conflitos HTTP 409 durante adições simultâneas ao carrinho.
