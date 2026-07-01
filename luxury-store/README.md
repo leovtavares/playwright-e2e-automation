@@ -18,11 +18,11 @@ Diferente de um e-commerce tradicional, plataformas de resale de luxo possuem ca
 
 Os artefatos deste case foram divididos para cobrir as principais etapas do ciclo de vida de testes de software:
 
-0. [**Plano de Testes**](0_test_plan.md): Escopo, estratégia, ambientes e matriz de riscos do ciclo de QA.
-1. [**Mapa Mental Exploratório**](1_exploratory_mindmap.md): Visão sistêmica da arquitetura de testes e heurísticas aplicadas.
-2. [**Casos de Teste em BDD**](2_bdd_test_cases.md): Transformação de regras de negócio (filtros de condição, carrinho e autenticação) em cenários executáveis Gherkin.
-3. [**Template de Bug Report**](3_bug_report_template.md): Padrão corporativo de documentação de falhas para facilitar o trabalho dos desenvolvedores.
-4. [**Estratégia de API (Postman)**](4_api_postman_strategy.md): Inspeção de rede e montagem de requests para validação de integrações e backend.
+0. [**Plano de Testes**](docs/0_test_plan.md): Escopo, estratégia, ambientes e matriz de riscos do ciclo de QA.
+1. [**Mapa Mental Exploratório**](docs/1_exploratory_mindmap.md): Visão sistêmica da arquitetura de testes e heurísticas aplicadas.
+2. [**Casos de Teste em BDD**](docs/2_bdd_test_cases.md): Transformação de regras de negócio (filtros de condição, carrinho e autenticação) em cenários executáveis Gherkin.
+3. [**Template de Bug Report**](docs/3_bug_report_template.md): Padrão corporativo de documentação de falhas para facilitar o trabalho dos desenvolvedores.
+4. [**Estratégia de API (Postman)**](docs/4_api_postman_strategy.md): Inspeção de rede e montagem de requests para validação de integrações e backend.
 
 ---
 *Construído com foco em qualidade de produto, segurança e alinhamento às regras de negócio corporativas.*

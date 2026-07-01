@@ -25,10 +25,10 @@ A interface de usuário entra em um estado de carregamento infinito (loop de abo
 ## Artefatos de Documentação
 Os seguintes artefatos técnicos documentam o ciclo de vida de QA para esta release:
 
-1. [**Estratégia e Escopo de Testes (CPT-8992)**](0_test_plan.md)
-2. [**Charter Exploratório SBTM (Sessão #402)**](1_exploratory_mindmap.md)
-3. [**Matriz de Execução de Testes (Zephyr)**](2_bdd_test_cases.md)
-4. [**Defeito Jira: CPT-9045 (Blocker)**](3_bug_report.md)
+1. [**Estratégia e Escopo de Testes (CPT-8992)**](docs/0_test_plan.md)
+2. [**Charter Exploratório SBTM (Sessão #402)**](docs/1_exploratory_mindmap.md)
+3. [**Matriz de Execução de Testes (Zephyr)**](docs/2_bdd_test_cases.md)
+4. [**Defeito Jira: CPT-9045 (Blocker)**](docs/3_bug_report.md)
 
 ---
 *Gerado via exportação automatizada de pipeline de QA.*

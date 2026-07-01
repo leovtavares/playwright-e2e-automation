@@ -18,10 +18,10 @@ Esse bug quebra o princípio de "Truthful Feedback" (Feedback Verdadeiro), engan
 ## Artefatos da Trilha de Testes
 O pacote de documentação forense abaixo descreve a descoberta, isolamento e reporte técnico da falha:
 
-1. [**Estratégia de Testes (PST-102)**](0_test_plan.md)
-2. [**Charter Exploratório SBTM (Sessão #88)**](1_exploratory_mindmap.md)
-3. [**Matriz de Execução de Testes (Zephyr)**](2_bdd_test_cases.md)
-4. [**Defeito Jira: PST-2044 (Optimistic UI False Positive)**](3_bug_report.md)
+1. [**Estratégia de Testes (PST-102)**](docs/0_test_plan.md)
+2. [**Charter Exploratório SBTM (Sessão #88)**](docs/1_exploratory_mindmap.md)
+3. [**Matriz de Execução de Testes (Zephyr)**](docs/2_bdd_test_cases.md)
+4. [**Defeito Jira: PST-2044 (Optimistic UI False Positive)**](docs/3_bug_report.md)
 
 ---
 *Documentação Interna de Qualidade - Confidencial*
