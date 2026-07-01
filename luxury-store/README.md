@@ -11,6 +11,22 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** Race Conditions, HTTP 409 Conflict handling on checkout.
 
+
+**Repository Structure:**
+```text
+📁 luxury-store
+├── 📁 api
+│   └── 📄 Cart_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   ├── 📄 3_bug_report_template.md
+│   └── 📄 4_api_postman_strategy.md
+└── 📁 e2e
+    └── 📄 checkout.spec.ts
+```
+
 ---
 <br><br>
 
@@ -24,3 +40,18 @@ Validar operações de carrinho de alto volume, compras concorrentes e restriç�
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Race Conditions, tratamento de HTTP 409 Conflict no checkout.
+
+**Estrutura do Repositório:**
+```text
+📁 luxury-store
+├── 📁 api
+│   └── 📄 Cart_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   ├── 📄 3_bug_report_template.md
+│   └── 📄 4_api_postman_strategy.md
+└── 📁 e2e
+    └── 📄 checkout.spec.ts
+```

@@ -11,6 +11,21 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** E2E Hydration timeouts, infinite spinners, and modern frontend reliability.
 
+
+**Repository Structure:**
+```text
+📁 comptia
+├── 📁 api
+│   └── 📄 HealthCheck_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   └── 📄 3_bug_report.md
+└── 📁 e2e
+    └── 📄 bug_regression_cpt9045.spec.ts
+```
+
 ---
 <br><br>
 
@@ -24,3 +39,17 @@ Validar os fluxos de busca, filtragem e aquisição de vouchers para certificaç
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Timeouts de Hidratação E2E, spinners infinitos e confiabilidade de frontends modernos.
+
+**Estrutura do Repositório:**
+```text
+📁 comptia
+├── 📁 api
+│   └── 📄 HealthCheck_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   └── 📄 3_bug_report.md
+└── 📁 e2e
+    └── 📄 bug_regression_cpt9045.spec.ts
+```

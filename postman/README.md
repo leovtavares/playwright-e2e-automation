@@ -11,6 +11,21 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** Exposing Optimistic UI flaws (when the frontend lies about the user's logged-in state despite expired tokens).
 
+
+**Repository Structure:**
+```text
+📁 postman
+├── 📁 api
+│   └── 📄 Proxy_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   └── 📄 3_bug_report.md
+└── 📁 e2e
+    └── 📄 optimistic_ui_pst2044.spec.ts
+```
+
 ---
 <br><br>
 
@@ -24,3 +39,17 @@ Validar autenticação de API, tokens de segurança e alinhamento de estado no f
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Expondo falhas de Optimistic UI (quando o frontend mente sobre o estado de login do usuário apesar de tokens expirados).
+
+**Estrutura do Repositório:**
+```text
+📁 postman
+├── 📁 api
+│   └── 📄 Proxy_API_Collection.json
+├── 📁 docs
+│   ├── 📄 0_test_plan.md
+│   ├── 📄 1_exploratory_mindmap.md
+│   ├── 📄 2_bdd_test_cases.md
+│   └── 📄 3_bug_report.md
+└── 📁 e2e
+    └── 📄 optimistic_ui_pst2044.spec.ts
+```
