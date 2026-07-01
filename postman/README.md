@@ -19,6 +19,8 @@ When testing the Identity & Profile module (`/settings/me`), I bypassed the logi
   - `3_bug_report.md`: Professional Jira Defect Report (PST-2044) with extracted API payloads.
 - `/e2e`: UI Automation Scripts using **Playwright** (TypeScript).
   - `optimistic_ui_pst2044.spec.ts`: A robust script that injects environment variables (`.env`) for session management, intercepts the websocket proxy, and reloads the page to mathematically prove the Optimistic UI failure.
+- `/api`: Backend Automation using **Postman**.
+  - `Proxy_API_Collection.json`: A Newman-ready collection to validate the internal WebSocket proxy endpoints and their responses.
 
 <br><br>
 
@@ -41,3 +43,5 @@ Ao testar o módulo de Identidade e Perfil (`/settings/me`), ultrapassei a tela 
   - `3_bug_report.md`: Reporte profissional de defeito no Jira (PST-2044) detalhando o tráfego de rede.
 - `/e2e`: Scripts de Automação de UI usando **Playwright** (TypeScript).
   - `optimistic_ui_pst2044.spec.ts`: Um script robusto que utiliza variáveis de ambiente (`.env`) para gerenciar sessões secretas, intercepta o websocket proxy, e recarrega a página para provar matematicamente a falha de *Optimistic UI*.
+- `/api`: Automação de Backend usando **Postman**.
+  - `Proxy_API_Collection.json`: Coleção pronta para Newman visando validar a resposta do proxy WebSocket e regras de autorização interna.

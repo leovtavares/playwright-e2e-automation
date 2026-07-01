@@ -19,6 +19,8 @@ When exploring `comptia.org`, I focused on the core conversion funnel: the "Expl
   - `3_bug_report.md`: Professional Jira Defect Report (CPT-9045).
 - `/e2e`: UI Automation Scripts using **Playwright** (TypeScript).
   - `bug_regression_cpt9045.spec.ts`: An automated regression test designed to fail if the infinite spinner bug persists, validating correct timeout handling.
+- `/api`: Backend Automation using **Postman**.
+  - `HealthCheck_API_Collection.json`: A Newman-ready collection to validate public endpoint availability.
 
 <br><br>
 
@@ -41,3 +43,5 @@ Ao explorar o `comptia.org`, foquei no funil principal de conversão: o módulo 
   - `3_bug_report.md`: Reporte profissional de defeito no Jira (CPT-9045).
 - `/e2e`: Scripts de Automação de UI usando **Playwright** (TypeScript).
   - `bug_regression_cpt9045.spec.ts`: Um teste automatizado de regressão desenhado para falhar caso o bug do spinner infinito ocorra, validando o tratamento correto de timeouts.
+- `/api`: Automação de Backend usando **Postman**.
+  - `HealthCheck_API_Collection.json`: Coleção pronta para Newman visando validar a disponibilidade básica de endpoints públicos.
