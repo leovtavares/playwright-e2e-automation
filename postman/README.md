@@ -24,4 +24,4 @@ O pacote de documentação forense abaixo descreve a descoberta, isolamento e re
 4. [**Defeito Jira: PST-2044 (Optimistic UI False Positive)**](docs/3_bug_report.md)
 
 ---
-*Documentação Interna de Qualidade - Confidencial*
+*Documentação Demonstrativa de Qualidade*
