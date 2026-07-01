@@ -69,12 +69,6 @@ npx playwright show-report
 
 *Note: Some Postman identity tests may be skipped locally if the `POSTMAN_SID` environment variable is not injected via your `.env` file (Security best practice).*
 
-## Core Competencies Demonstrated
-
-1. **Defect Prediction:** Testing *Architecture* (Race Conditions, Optimistic UI) instead of just checking if a button is red.
-2. **DevOps & CI/CD:** Robust GitHub Actions pipeline featuring smart dependency caching, cross-module monorepo execution, and automated deployment of test reports to GitHub Pages.
-3. **Clean Code & Governance:** Linear Git history governed by Jira-style IDs (e.g., `CPT-9045`) and semantic commits (Gitmojis).
-
 ## The QA Engineering Ecosystem
 
 This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
@@ -157,12 +151,6 @@ npx playwright show-report
 ```
 
 *Nota: Alguns testes de identidade do Postman podem ser ignorados localmente se a variável de ambiente `POSTMAN_SID` não for injetada no seu arquivo `.env` (Padrão ouro de Segurança/AppSec).*
-
-## Competências Core Demonstradas
-
-1. **Previsão de Defeitos:** Testar a *Arquitetura* (Race Conditions, Optimistic UI) ao invés de apenas validar se o CSS de um botão está correto.
-2. **DevOps & CI/CD:** Pipeline robusta via GitHub Actions contendo *caching* inteligente de dependências, execução multicliente em paralelo, e deploy automático dos relatórios de teste via GitHub Pages.
-3. **Clean Code & Governança:** Histórico linear no Git, governado por *IDs Jira* (ex: `CPT-9045`) e *Semantic Commits* (Gitmojis).
 
 ## O Ecossistema de Engenharia de Qualidade
 
