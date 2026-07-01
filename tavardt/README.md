@@ -14,6 +14,7 @@ When analyzing `ag.tavardt.com`, I identified two critical business flows that c
 
 - `/docs`: Contains the "QA Mindset" artifacts.
   - `0_test_plan.md`: High-level test coverage and risk assessment.
+  - `1_exploratory_mindmap.md`: SBTM Session Charter and heuristic mindmap.
   - `2_bdd_test_cases.md`: Detailed scenario mapping (Positive, Negative, and Edge Cases).
   - `3_bug_report.md`: Professional defect reporting demonstrating how I document and communicate issues.
 - `/e2e`: UI Automation Scripts using **Playwright** (TypeScript). Tests browser-based interactions and DOM validations.
@@ -35,6 +36,7 @@ Ao analisar o site `ag.tavardt.com`, identifiquei dois fluxos de negócios crít
 
 - `/docs`: Contém os artefatos do "Mindset de QA".
   - `0_test_plan.md`: Cobertura de testes de alto nível e avaliação de riscos.
+  - `1_exploratory_mindmap.md`: Charter de Sessão SBTM e mapa mental heurístico.
   - `2_bdd_test_cases.md`: Mapeamento detalhado de cenários (Caminhos Felizes, Negativos e Casos de Borda).
   - `3_bug_report.md`: Reporte profissional de defeitos, demonstrando como eu documento e comunico problemas.
 - `/e2e`: Scripts de Automação de UI usando **Playwright** (TypeScript). Testa interações baseadas no navegador e validações de DOM.
