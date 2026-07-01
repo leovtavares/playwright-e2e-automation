@@ -1,34 +1,34 @@
-# Confluence: QA Release Sign-off Report
+# Confluence: Relatório de Sign-off de QA
 
-**Project:** CompTIA Portal Revamp  
-**Release Version:** v2.4.1 (Sprint 42)  
-**Date:** Out 24, 2023  
+**Projeto:** CompTIA Portal Revamp  
+**Versão da Release:** v2.4.1 (Sprint 42)  
+**Data:** 30 de Junho de 2026  
 **QA Lead:** L. Tavares  
 **Status:** 🔴 **NO-GO**
 
 ---
 
-## Executive Summary
-The testing cycle for Release v2.4.1 (focused on Epic `CPT-8992: Careers Portal Revamp`) has been executed. The release is currently blocked from production deployment due to a critical P1/S1 defect found in the `Explore Careers` module.
+## Sumário Executivo
+O ciclo de testes para a Release v2.4.1 (focado no Épico `CPT-8992: Careers Portal Revamp`) foi executado. A release está atualmente bloqueada para deploy em produção devido a um defeito crítico (P1/S1) encontrado no módulo `Explore Careers`.
 
-The UI enters an infinite loading state (hydration failure/API timeout) when fetching the job roles payload, severely impacting the user acquisition funnel.
+A interface de usuário entra em um estado de carregamento infinito (loop de abortos na comunicação do React Server Components) ao buscar o payload de vagas (Job Roles), impactando severamente o funil de aquisição de usuários.
 
-## Quality Metrics
+## Métricas de Qualidade
 
-| Metric | Target | Actual | Status |
+| Métrica | Meta | Realizado | Status |
 | :--- | :--- | :--- | :--- |
-| **Test Execution Coverage** | 100% | 100% | ✅ Pass |
-| **Pass Rate** | > 95% | 85.7% | ❌ Fail |
-| **Critical/Blocker Defects** | 0 | 1 | ❌ Fail (See `CPT-9045`) |
-| **Major Defects** | 0 | 0 | ✅ Pass |
+| **Cobertura de Execução** | 100% | 100% | ✅ Pass |
+| **Taxa de Sucesso (Pass Rate)** | > 95% | 85.7% | ❌ Fail |
+| **Defeitos Críticos/Blockers** | 0 | 1 | ❌ Fail (Ver `CPT-9045`) |
+| **Defeitos Maiores (Major)** | 0 | 0 | ✅ Pass |
 
-## Documentation Artifacts
-The following technical artifacts document the QA lifecycle for this release:
+## Artefatos de Documentação
+Os seguintes artefatos técnicos documentam o ciclo de vida de QA para esta release:
 
-1. [**Test Strategy & Scope (CPT-8992)**](0_test_plan.md)
-2. [**SBTM Exploratory Charter (Session #402)**](1_exploratory_mindmap.md)
-3. [**Zephyr Test Execution Matrix**](2_bdd_test_cases.md)
-4. [**Jira Defect: CPT-9045 (Blocker)**](3_bug_report.md)
+1. [**Estratégia e Escopo de Testes (CPT-8992)**](0_test_plan.md)
+2. [**Charter Exploratório SBTM (Sessão #402)**](1_exploratory_mindmap.md)
+3. [**Matriz de Execução de Testes (Zephyr)**](2_bdd_test_cases.md)
+4. [**Defeito Jira: CPT-9045 (Blocker)**](3_bug_report.md)
 
 ---
-*Generated via automated QA pipeline export.*
+*Gerado via exportação automatizada de pipeline de QA.*

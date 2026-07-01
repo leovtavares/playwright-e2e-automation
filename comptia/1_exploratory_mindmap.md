@@ -1,31 +1,31 @@
-# SBTM: Exploratory Session Charter
+# SBTM: Charter de Sessão Exploratória
 
-**Session ID:** #402  
-**Epic:** CPT-8992  
+**ID da Sessão:** #402  
+**Épico:** CPT-8992  
 **Tester:** L. Tavares  
-**Duration:** 90 mins (Test: 70% / Bug Reporting: 20% / Setup: 10%)  
+**Duração:** 90 mins (Teste: 70% / Reporte de Bug: 20% / Setup: 10%)  
 
-## Charter Mission
-*Explore the Job Roles filtering and pagination mechanisms to discover race conditions, API latency issues, and UI state inconsistencies.*
+## Missão do Charter
+*Explorar os mecanismos de filtro e paginação de Carreiras (Job Roles) para descobrir possíveis race conditions, latência de API e inconsistências no estado da interface.*
 
-## Session Coverage (Mindmap)
+## Cobertura da Sessão (Mindmap)
 
 ```mermaid
 mindmap
-  root((CPT-8992 Scope))
-    Category Filters
-      Concurrent Clicks (Race Condition)
-      State Persistence on Back Button
-      CSS active states
-    Data Hydration
-      Loading Skeletons / Spinners
-      Fallback UI (5xx Errors)
-      Empty Payload Handling
-    Pagination
-      Query Param `?page=X` mutation
-      Deep Linking (Direct access to page 2)
+  root((Escopo CPT-8992))
+    Filtros de Categoria
+      Cliques Concorrentes (Race Condition)
+      Persistência de Estado no Botão Voltar
+      Estados ativos (CSS)
+    Hidratação de Dados
+      Skeletons / Spinners de Carregamento
+      UI de Fallback (Erros 5xx e 4xx)
+      Tratamento de Payload Vazio
+    Paginação
+      Mutação de Query Param `?page=X`
+      Deep Linking (Acesso direto à página 2)
 ```
 
-## Session Notes
-- **Observation:** Rapidly clicking between "Cloud" and "Cyber" triggers multiple fetch requests without cancellation (AbortController is missing).
-- **Issue Discovered:** Accessing `?category=all` directly or via the UI button causes the loader component to hang indefinitely. Logged as `CPT-9045`.
+## Notas da Sessão
+- **Observação:** O site utiliza chamadas Next.js RSC (React Server Components). O WAF pode estar configurado de forma excessivamente estrita para certas requisições.
+- **Problema Descoberto:** Acessar a página com `?category=all` ou tentar alternar via UI causa um colapso contínuo na rede, onde as chamadas `_rsc` entram em aborto sistêmico (`net::ERR_ABORTED`), possivelmente causadas por conflitos de roteamento do cliente ou bloqueios prévios (403). Registrado como `CPT-9045`.
