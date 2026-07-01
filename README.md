@@ -11,13 +11,13 @@
 Welcome to my automation and software quality engineering portfolio. 
 This repository is living proof of my skills as a Software Development Engineer in Test (SDET) and QA Analyst, moving beyond basic UI checks into **Risk-Based Testing**, **Architecture validation**, and **DevOps CI/CD infrastructure**.
 
-## 📊 Live Quality Dashboard
+## Live Quality Dashboard
 
-> **[View Live HTML Test Report 🚀](https://realleotavares.github.io/portfolio-qa/)**
+> **[View Live HTML Test Report](https://realleotavares.github.io/portfolio-qa/)**
 > 
 > Our CI/CD pipeline automatically publishes the latest Playwright test execution report to GitHub Pages. It includes traces, screenshots, and videos of any architectural failures found during E2E runs.
 
-## 🏗️ Repository Architecture (Multi-Client Monorepo)
+## Repository Architecture (Multi-Client Monorepo)
 
 This repository adopts an enterprise-level Monorepo pattern where tests are strictly isolated by "client" or "project", addressing specific modern application failure nodes.
 
@@ -27,23 +27,23 @@ qa-portfolio/
 ├── playwright.config.ts        # Global Playwright configuration with Monorepo setup
 ├── .github/workflows/          # CI/CD Pipelines (Caching, GH Pages Deploy)
 │
-├── luxury-store/               # 🛒 E-commerce Concurrency & Inventory
+├── luxury-store/               # E-commerce Concurrency & Inventory
 │   ├── e2e/checkout.spec.ts    # Tests Race Conditions and HTTP 409 Conflict handling
 │   └── api/                    # Backend inventory isolation tests
 │
-├── postman/                    # 🔐 Security & Optimistic UI
+├── postman/                    # Security & Optimistic UI
 │   ├── e2e/optimistic_ui.spec  # Proves state misalignment (Frontend lying to user)
 │   └── api/                    # Security tokens and API auth logic
 │
-├── comptia/                    # ⚛️ React & Modern Frontend Reliability
+├── comptia/                    # React & Modern Frontend Reliability
 │   ├── e2e/bug_regression.spec # Tests Hydration timeouts and infinite loading spinners
 │
-└── tavardt/                    # 🌍 Internationalization & Accessibility
+└── tavardt/                    # Internationalization & Accessibility
     ├── e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
     └── docs/                   # Exploratory mindmaps and QA mindset documentation
 ```
 
-## 🚀 Quick Start (Developer Onboarding)
+## Quick Start (Developer Onboarding)
 
 Want to run these tests locally? It takes less than 2 minutes.
 
@@ -69,7 +69,7 @@ npx playwright show-report
 
 *Note: Some Postman identity tests may be skipped locally if the `POSTMAN_SID` environment variable is not injected via your `.env` file (Security best practice).*
 
-## 🎯 Core Competencies Demonstrated
+## Core Competencies Demonstrated
 
 1. **Defect Prediction:** Testing *Architecture* (Race Conditions, Optimistic UI) instead of just checking if a button is red.
 2. **DevOps & CI/CD:** Robust GitHub Actions pipeline featuring smart dependency caching, cross-module monorepo execution, and automated deployment of test reports to GitHub Pages.
@@ -91,13 +91,13 @@ npx playwright show-report
 Bem-vindo ao meu portfólio de automação e engenharia de qualidade de software. 
 Este repositório é a prova viva das minhas habilidades como Engenheiro de Qualidade (SDET) e Analista de QA. Aqui eu vou além de checagens básicas de UI e aplico **Testes Baseados em Risco**, **Validação Arquitetural** e **Infraestrutura CI/CD (DevOps)**.
 
-## 📊 Dashboard de Qualidade (Ao Vivo)
+## Dashboard de Qualidade (Ao Vivo)
 
-> **[Acessar Relatório HTML Interativo 🚀](https://realleotavares.github.io/portfolio-qa/)**
+> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/portfolio-qa/)**
 > 
 > Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Playwright no GitHub Pages. Ele inclui *traces*, *screenshots* e vídeos de qualquer falha arquitetural encontrada nos testes E2E.
 
-## 🏗️ Arquitetura do Repositório (Monorepo Multi-Client)
+## Arquitetura do Repositório (Monorepo Multi-Client)
 
 Este repositório adota um padrão de Monorepo (nível Enterprise), onde os testes são isolados de forma estrita por "cliente" ou "projeto", abordando nós específicos de falhas em aplicações modernas.
 
@@ -107,23 +107,23 @@ qa-portfolio/
 ├── playwright.config.ts        # Configuração global do Playwright (Monorepo setup)
 ├── .github/workflows/          # Pipelines CI/CD (Caching, Deploy no GH Pages)
 │
-├── luxury-store/               # 🛒 E-commerce: Concorrência e Estoque
+├── luxury-store/               # E-commerce: Concorrência e Estoque
 │   ├── e2e/checkout.spec.ts    # Testes de Race Conditions e bloqueio HTTP 409 Conflict
 │   └── api/                    # Validação de regras de negócios no backend
 │
-├── postman/                    # 🔐 Segurança e UI Otimista (Optimistic UI)
+├── postman/                    # Segurança e UI Otimista (Optimistic UI)
 │   ├── e2e/optimistic_ui.spec  # Prova o desalinhamento de estado (quando o Front mente ao usuário)
 │   └── api/                    # Autenticação de tokens de segurança
 │
-├── comptia/                    # ⚛️ Confiabilidade em React e Frontends Modernos
+├── comptia/                    # Confiabilidade em React e Frontends Modernos
 │   ├── e2e/bug_regression.spec # Testes de Timeout de Hidratação e Spinners Infinitos
 │
-└── tavardt/                    # 🌍 Internacionalização e Acessibilidade
+└── tavardt/                    # Internacionalização e Acessibilidade
     ├── e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
     └── docs/                   # Mindmaps exploratórios e documentação de QA Manual
 ```
 
-## 🚀 Quick Start (Onboarding de Desenvolvedores)
+## Quick Start (Onboarding de Desenvolvedores)
 
 Quer rodar estes testes na sua máquina? Leva menos de 2 minutos.
 
@@ -149,7 +149,7 @@ npx playwright show-report
 
 *Nota: Alguns testes de identidade do Postman podem ser ignorados localmente se a variável de ambiente `POSTMAN_SID` não for injetada no seu arquivo `.env` (Padrão ouro de Segurança/AppSec).*
 
-## 🎯 Competências Core Demonstradas
+## Competências Core Demonstradas
 
 1. **Previsão de Defeitos:** Testar a *Arquitetura* (Race Conditions, Optimistic UI) ao invés de apenas validar se o CSS de um botão está correto.
 2. **DevOps & CI/CD:** Pipeline robusta via GitHub Actions contendo *caching* inteligente de dependências, execução multicliente em paralelo, e deploy automático dos relatórios de teste via GitHub Pages.
