@@ -1,4 +1,4 @@
-[🇺🇸 English](#english) | [🇧🇷 Português](#português)
+[English](#english) | [Português](#português)
 
 <a id="english"></a>
 # Quality Assurance (QA) & Engineering Portfolio
@@ -10,21 +10,6 @@
 
 Welcome to my automation and software quality engineering portfolio. 
 This repository is living proof of my skills as a Software Development Engineer in Test (SDET) and QA Analyst, moving beyond basic UI checks into **Risk-Based Testing**, **Architecture validation**, and **DevOps CI/CD infrastructure**.
-
-## Live Quality Dashboard
-
-> **[View Live HTML Test Report](https://realleotavares.github.io/portfolio-qa/)**
-> 
-> Our CI/CD pipeline automatically publishes the latest Playwright test execution report to GitHub Pages. It includes traces, screenshots, and videos of any architectural failures found during E2E runs.
-
-## 🔗 The QA Engineering Ecosystem
-
-This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
-
-- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Main E2E Framework)
-- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Backend JSON & Schema validation)
-- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (BDD & Keyword-Driven UI Testing)
-- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (Load, Stress & Spike Testing SLAs)
 
 ## Repository Architecture (Multi-Client Monorepo)
 
@@ -51,6 +36,12 @@ qa-portfolio/
     ├── e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
     └── docs/                   # Exploratory mindmaps and QA mindset documentation
 ```
+
+## Live Quality Dashboard
+
+> **[View Live HTML Test Report](https://realleotavares.github.io/portfolio-qa/)**
+> 
+> Our CI/CD pipeline automatically publishes the latest Playwright test execution report to GitHub Pages. It includes traces, screenshots, and videos of any architectural failures found during E2E runs.
 
 ## Quick Start (Developer Onboarding)
 
@@ -84,6 +75,15 @@ npx playwright show-report
 2. **DevOps & CI/CD:** Robust GitHub Actions pipeline featuring smart dependency caching, cross-module monorepo execution, and automated deployment of test reports to GitHub Pages.
 3. **Clean Code & Governance:** Linear Git history governed by Jira-style IDs (e.g., `CPT-9045`) and semantic commits (Gitmojis).
 
+## The QA Engineering Ecosystem
+
+This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Main E2E Framework)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Backend JSON & Schema validation)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (BDD & Keyword-Driven UI Testing)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (Load, Stress & Spike Testing SLAs)
+
 ---
 *This portfolio is governed by strict CI/CD and engineering standards.*
 
@@ -99,21 +99,6 @@ npx playwright show-report
 
 Bem-vindo ao meu portfólio de automação e engenharia de qualidade de software. 
 Este repositório é a prova viva das minhas habilidades como Engenheiro de Qualidade (SDET) e Analista de QA. Aqui eu vou além de checagens básicas de UI e aplico **Testes Baseados em Risco**, **Validação Arquitetural** e **Infraestrutura CI/CD (DevOps)**.
-
-## Dashboard de Qualidade (Ao Vivo)
-
-> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/portfolio-qa/)**
-> 
-> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Playwright no GitHub Pages. Ele inclui *traces*, *screenshots* e vídeos de qualquer falha arquitetural encontrada nos testes E2E.
-
-## 🔗 O Ecossistema de Engenharia de Qualidade
-
-Este repositório faz parte de um ecossistema maior de Quality Engineering, demonstrando minha habilidade de testar aplicações em todas as camadas da Pirâmide de Testes. Conheça as outras camadas:
-
-- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Framework Principal de E2E)
-- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Validação de Backend JSON & Schema)
-- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (Testes de UI BDD & Keyword-Driven)
-- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (SLAs de Load, Stress & Spike Testing)
 
 ## Arquitetura do Repositório (Monorepo Multi-Client)
 
@@ -140,6 +125,12 @@ qa-portfolio/
     ├── e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
     └── docs/                   # Mindmaps exploratórios e documentação de QA Manual
 ```
+
+## Dashboard de Qualidade (Ao Vivo)
+
+> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/portfolio-qa/)**
+> 
+> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Playwright no GitHub Pages. Ele inclui *traces*, *screenshots* e vídeos de qualquer falha arquitetural encontrada nos testes E2E.
 
 ## Quick Start (Onboarding de Desenvolvedores)
 
@@ -172,6 +163,15 @@ npx playwright show-report
 1. **Previsão de Defeitos:** Testar a *Arquitetura* (Race Conditions, Optimistic UI) ao invés de apenas validar se o CSS de um botão está correto.
 2. **DevOps & CI/CD:** Pipeline robusta via GitHub Actions contendo *caching* inteligente de dependências, execução multicliente em paralelo, e deploy automático dos relatórios de teste via GitHub Pages.
 3. **Clean Code & Governança:** Histórico linear no Git, governado por *IDs Jira* (ex: `CPT-9045`) e *Semantic Commits* (Gitmojis).
+
+## O Ecossistema de Engenharia de Qualidade
+
+Este repositório faz parte de um ecossistema maior de Quality Engineering, demonstrando minha habilidade de testar aplicações em todas as camadas da Pirâmide de Testes. Conheça as outras camadas:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Framework Principal de E2E)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Validação de Backend JSON & Schema)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (Testes de UI BDD & Keyword-Driven)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (SLAs de Load, Stress & Spike Testing)
 
 ---
 *Este portfólio é governado por rigorosos padrões de CI/CD e engenharia de software.*
