@@ -1,29 +1,14 @@
-# 2. Casos de Teste (BDD) - Filtros e Listagem
+# Zephyr Scale: Test Execution Matrix
 
-Os cenários abaixo foram escritos com foco no comportamento esperado (Behavior-Driven Development) da página de exploração de carreiras. O objetivo é balizar como a funcionalidade de listagem e filtragem de categorias deveria se comportar em um cenário sem bugs.
+**Cycle:** CPT-REL-2.4.1  
+**Folder:** `/Explore-Careers/Job-Roles`  
+**Execution Date:** Out 24, 2023  
 
-## Funcionalidade: Listagem de Carreiras por Categoria
+| Test Key | Description (BDD Summary) | Status | Executed By | Defects Linked |
+| :--- | :--- | :--- | :--- | :--- |
+| **CPT-TC-101** | **Given** the user accesses the /job-roles page<br>**When** the initial API fetch resolves<br>**Then** the job grid should render all roles | ❌ **FAIL** | L. Tavares | `CPT-9045` |
+| **CPT-TC-102** | **Given** the user is viewing the "All" category<br>**When** they click on the "Cyber" filter<br>**Then** the URL updates to `?category=Cyber` and the grid re-renders | 🚫 **BLOCKED** | L. Tavares | `CPT-9045` |
+| **CPT-TC-103** | **Given** the backend API returns a 500 error<br>**When** the frontend attempts to map the payload<br>**Then** a fallback Error Boundary UI is displayed (No infinite loading) | ❌ **FAIL** | L. Tavares | `CPT-9045` |
 
-**Como** um usuário buscando iniciar na área de TI
-**Quero** poder filtrar carreiras por categorias de tecnologia (Cloud, AI, Cyber)
-**Para que** eu possa ver apenas os perfis profissionais que me interessam
-
-### Cenário 1: Carregamento inicial com sucesso da aba "All"
-**Dado** que acesso a URL `https://www.comptia.org/en-us/explore-careers/job-roles/?page=1&category=all`
-**E** o servidor backend está operante
-**Quando** a página termina o processo de renderização (React Hydration)
-**Então** a lista de carreiras deve ser exibida abaixo dos botões de filtro
-**E** o loading spinner vermelho deve desaparecer da tela
-
-### Cenário 2: Transição entre abas de categorias
-**Dado** que estou visualizando a aba "All"
-**Quando** clico na categoria "Cyber"
-**Então** a interface deve exibir brevemente o loading spinner
-**E** a lista deve ser populada apenas com profissões relacionadas a Cybersecurity
-**E** a URL no navegador deve ser atualizada para `?category=Cyber`
-
-### Cenário 3: Exibição adequada em caso de falha de servidor (Tratamento de Erro)
-**Dado** que a API responsável por buscar as carreiras retorna um Erro 500 (Internal Server Error) ou sofre timeout
-**Quando** eu acesso ou filtro a página
-**Então** o loading spinner NÃO deve ficar em exibição infinita
-**E** uma mensagem amigável de erro deve ser exibida ao usuário (ex: "Não foi possível carregar as carreiras neste momento.")
+---
+*Note: TC-102 is blocked because the base component fails to render the initial state, preventing further interaction with the filters.*

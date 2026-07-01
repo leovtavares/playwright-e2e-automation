@@ -1,36 +1,45 @@
-# 0. Plano de Testes (Test Plan) - Auditoria de Produção
+# Confluence: Test Strategy Document
 
-Este documento descreve a estratégia de Quality Assurance aplicada durante a auditoria do portal "Explore Careers" da CompTIA em ambiente de produção. O foco é identificar anomalias na navegação e renderização de dados para o usuário final.
+**Epic:** `CPT-8992: Career Explorer Revamp`  
+**Status:** Approved  
+**Author:** QA Engineering Team  
 
-## 1. Objetivo
-Garantir que a listagem de carreiras, a funcionalidade de paginação e o filtro por categorias operem conforme o esperado, entregando o conteúdo correto ao usuário sem quebras de layout ou falhas de requisição.
+---
 
-## 2. Escopo de Testes
+## 1. Scope Definition
 
-### ✅ Dentro do Escopo (In Scope)
-- Renderização inicial da lista de vagas/carreiras (Job Roles).
-- Navegação entre as categorias (All, Digital Foundations, AI, Cloud, etc.).
-- Paginação de resultados.
-- Comportamento de estados de carregamento (Loaders/Spinners).
+### 1.1 In-Scope Features (Sprint 42)
+- Initial rendering of the Job Roles grid component.
+- Category filtering mechanisms (All, Digital Foundations, AI, Cloud, Cyber, Data, Network, Tech Support).
+- Pagination logic (`?page=X` URL param binding).
+- Empty states and loading skeletons.
 
-### ❌ Fora do Escopo (Out of Scope)
-- Fluxo de compra de Certificações.
-- Autenticação e Login de parceiros.
-- Testes de performance na infraestrutura raiz.
+### 1.2 Out of Scope
+- Certification purchase funnel.
+- SEO Metadata validation (Covered in Sprint 40).
+- Back-office / CMS data entry.
 
-## 3. Estratégia de Testes
-A abordagem escolhida é de **Auditoria em Produção (Caixa Cinza - Gray Box)**, aliando a perspectiva do usuário final com a análise técnica via DevTools:
-- **Testes Funcionais:** Verificação do comportamento das abas e botões de paginação.
-- **Isolamento de Falhas (Troubleshooting):** Análise de requisições de rede (Network) e exceções no console para classificar se os bugs encontrados são de responsabilidade do Front-end (ex: erro de React Hydration) ou Back-end (ex: erro 500 na API).
+## 2. Test Approach
+A hybrid testing approach will be utilized to validate front-end and back-end contracts.
 
-## 4. Ambiente de Testes
-- **OS:** Windows 11
-- **Browser:** Google Chrome (v121.0)
-- **Environment:** Produção (compTIA.org)
+### 2.1 Functional Testing (BDD)
+Verification of acceptance criteria defined in Jira stories. Monitored via Xray/Zephyr test cycles.
 
-## 5. Matriz de Riscos
+### 2.2 Exploratory Testing (SBTM)
+Session-Based Test Management (SBTM) will be applied to uncover edge cases regarding race conditions (e.g., rapidly clicking different categories before the previous payload resolves).
 
-| Risco de Negócio | Probabilidade | Impacto | Mitigação (Estratégia QA) |
+### 2.3 API & Integration
+Direct validation of the GraphQL / REST endpoints serving the Job Roles data to isolate UI defects from Backend timeouts.
+
+## 3. Environment Details
+- **Environment:** Staging / Production
+- **Test Data:** Live DB Replica
+- **Target Browsers:** Chrome (v121.0), Safari (iOS 17.2)
+
+## 4. Requirements Traceability Matrix (RTM)
+
+| Req ID | Jira Story | Description | Associated Tests |
 | :--- | :--- | :--- | :--- |
-| **Conteúdo não renderizar (Tela Branca / Loading Infinito)** | Alta | Crítico | Monitoramento via DevTools da resposta do backend ao mudar categorias. |
-| **Paginação não atualizar a URL** | Média | Médio | Validar se o parâmetro `?page=X` altera dinamicamente e persiste no history. |
+| REQ-01 | CPT-8993 | User can view all job roles by default | CPT-TC-101 |
+| REQ-02 | CPT-8994 | User can filter roles by specific category | CPT-TC-102 |
+| REQ-03 | CPT-8995 | UI must handle API failures gracefully | CPT-TC-103 |
