@@ -1,91 +1,159 @@
 [🇺🇸 English](#english) | [🇧🇷 Português](#português)
 
 <a id="english"></a>
-# Quality Assurance (QA) Portfolio
+# Quality Assurance (QA) & Engineering Portfolio
 
-Welcome to my automation and software quality engineering portfolio.
+[![CI/CD Pipeline](https://github.com/realleotavares/portfolio-qa/actions/workflows/playwright.yml/badge.svg)](https://github.com/realleotavares/portfolio-qa/actions)
+[![Playwright](https://img.shields.io/badge/Playwright-Enabled-2EAD33?logo=playwright)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Live Report](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-blue?logo=github)](https://realleotavares.github.io/portfolio-qa/)
 
-This repository serves as practical evidence of my skills as a Software Test Analyst (QA), ranging from **manual test strategy and scenario mapping** to the construction of **E2E and API automation pipelines**.
+Welcome to my automation and software quality engineering portfolio. 
+This repository is living proof of my skills as a Software Development Engineer in Test (SDET) and QA Analyst, moving beyond basic UI checks into **Risk-Based Testing**, **Architecture validation**, and **DevOps CI/CD infrastructure**.
 
-## Repository Architecture (Multi-Client)
+## 📊 Live Quality Dashboard
 
-To demonstrate scalability and enterprise-level organization, this repository adopts an architectural pattern where tests are isolated by "clients" or "projects".
+> **[View Live HTML Test Report 🚀](https://realleotavares.github.io/portfolio-qa/)**
+> 
+> Our CI/CD pipeline automatically publishes the latest Playwright test execution report to GitHub Pages. It includes traces, screenshots, and videos of any architectural failures found during E2E runs.
+
+## 🏗️ Repository Architecture (Multi-Client Monorepo)
+
+This repository adopts an enterprise-level Monorepo pattern where tests are strictly isolated by "client" or "project", addressing specific modern application failure nodes.
 
 ```text
-qa/
-├── README.md                 # This document
-├── .github/workflows/        # CI/CD Pipelines (GitHub Actions)
+qa-portfolio/
+├── README.md                   # This document
+├── playwright.config.ts        # Global Playwright configuration with Monorepo setup
+├── .github/workflows/          # CI/CD Pipelines (Caching, GH Pages Deploy)
 │
-├── tavardt/                  # [Client 1] ag.tavardt.com tests
-│   ├── docs/                 # QA Mindset: Manual Test Plans and Cases
-│   ├── e2e/                  # Web Automation (Playwright + TypeScript)
-│   └── api/                  # API Automation (Postman / Newman)
+├── luxury-store/               # 🛒 E-commerce Concurrency & Inventory
+│   ├── e2e/checkout.spec.ts    # Tests Race Conditions and HTTP 409 Conflict handling
+│   └── api/                    # Backend inventory isolation tests
 │
-├── client2/                  # [Client 2] ...
-│   └── ...
-└── client3/                  # [Client 3] ...
-    └── ...
+├── postman/                    # 🔐 Security & Optimistic UI
+│   ├── e2e/optimistic_ui.spec  # Proves state misalignment (Frontend lying to user)
+│   └── api/                    # Security tokens and API auth logic
+│
+├── comptia/                    # ⚛️ React & Modern Frontend Reliability
+│   ├── e2e/bug_regression.spec # Tests Hydration timeouts and infinite loading spinners
+│
+└── tavardt/                    # 🌍 Internationalization & Accessibility
+    ├── e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
+    └── docs/                   # Exploratory mindmaps and QA mindset documentation
 ```
 
-## Technologies and Tools
+## 🚀 Quick Start (Developer Onboarding)
 
-- **Planning:** Markdown, Coverage Guides, and Quality Strategy.
-- **Web UI Automation:** Playwright with TypeScript (Pattern: Page Objects).
-- **API Automation:** Postman (Tests in exported collections).
-- **Continuous Integration:** GitHub Actions for cloud test execution on every code change.
+Want to run these tests locally? It takes less than 2 minutes.
 
-## Objective
+**Prerequisites:** [Node.js](https://nodejs.org/) (v18+)
 
-Demonstrate the critical competencies required in the daily life of a QA professional:
-1. **Critical Thinking:** Knowing WHAT to test before knowing HOW to test (Edge Cases and Boundaries).
-2. **Technical Quality:** Clean, stable, and maintainable automation code.
-3. **Communication:** Efficient reporting of results and clearly documented defects.
+```bash
+# 1. Clone the repository
+git clone https://github.com/realleotavares/portfolio-qa.git
+cd portfolio-qa
+
+# 2. Install dependencies (Clean install based on package-lock)
+npm ci
+
+# 3. Install Playwright browsers
+npx playwright install --with-deps chromium
+
+# 4. Run the full E2E Suite
+npx playwright test
+
+# 5. View the Interactive Report
+npx playwright show-report
+```
+
+*Note: Some Postman identity tests may be skipped locally if the `POSTMAN_SID` environment variable is not injected via your `.env` file (Security best practice).*
+
+## 🎯 Core Competencies Demonstrated
+
+1. **Defect Prediction:** Testing *Architecture* (Race Conditions, Optimistic UI) instead of just checking if a button is red.
+2. **DevOps & CI/CD:** Robust GitHub Actions pipeline featuring smart dependency caching, cross-module monorepo execution, and automated deployment of test reports to GitHub Pages.
+3. **Clean Code & Governance:** Linear Git history governed by Jira-style IDs (e.g., `CPT-9045`) and semantic commits (Gitmojis).
 
 ---
-*This portfolio is constantly evolving.*
+*This portfolio is governed by strict CI/CD and engineering standards.*
 
-<br><br>
+<br><br><br>
 
 <a id="português"></a>
-# Portfólio de Quality Assurance (QA)
+# Portfólio de Quality Assurance (QA) & Engenharia
 
-Bem-vindo ao meu portfólio de automação e engenharia de qualidade. 
+[![CI/CD Pipeline](https://github.com/realleotavares/portfolio-qa/actions/workflows/playwright.yml/badge.svg)](https://github.com/realleotavares/portfolio-qa/actions)
+[![Playwright](https://img.shields.io/badge/Playwright-Enabled-2EAD33?logo=playwright)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Live Report](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-blue?logo=github)](https://realleotavares.github.io/portfolio-qa/)
 
-Este repositório serve como evidência prática das minhas habilidades como Analista de Testes Automatizados (QA), abrangendo desde a **estratégia e mapeamento manual de cenários** até a construção de **pipelines de automação E2E e API**.
+Bem-vindo ao meu portfólio de automação e engenharia de qualidade de software. 
+Este repositório é a prova viva das minhas habilidades como Engenheiro de Qualidade (SDET) e Analista de QA. Aqui eu vou além de checagens básicas de UI e aplico **Testes Baseados em Risco**, **Validação Arquitetural** e **Infraestrutura CI/CD (DevOps)**.
 
-## Arquitetura do Repositório (Multi-Client)
+## 📊 Dashboard de Qualidade (Ao Vivo)
 
-Para demonstrar escalabilidade e organização de nível empresarial, este repositório adota um padrão arquitetural onde os testes são isolados por "clientes" ou "projetos".
+> **[Acessar Relatório HTML Interativo 🚀](https://realleotavares.github.io/portfolio-qa/)**
+> 
+> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Playwright no GitHub Pages. Ele inclui *traces*, *screenshots* e vídeos de qualquer falha arquitetural encontrada nos testes E2E.
+
+## 🏗️ Arquitetura do Repositório (Monorepo Multi-Client)
+
+Este repositório adota um padrão de Monorepo (nível Enterprise), onde os testes são isolados de forma estrita por "cliente" ou "projeto", abordando nós específicos de falhas em aplicações modernas.
 
 ```text
-qa/
-├── README.md                 # Este documento
-├── .github/workflows/        # Pipelines de CI/CD (GitHub Actions)
+qa-portfolio/
+├── README.md                   # Este documento
+├── playwright.config.ts        # Configuração global do Playwright (Monorepo setup)
+├── .github/workflows/          # Pipelines CI/CD (Caching, Deploy no GH Pages)
 │
-├── tavardt/                  # [Cliente 1] Testes do site ag.tavardt.com
-│   ├── docs/                 # Mindset de QA: Planos e Casos de Teste Manuais
-│   ├── e2e/                  # Automação Web (Playwright + TypeScript)
-│   └── api/                  # Automação de API (Postman / Newman)
+├── luxury-store/               # 🛒 E-commerce: Concorrência e Estoque
+│   ├── e2e/checkout.spec.ts    # Testes de Race Conditions e bloqueio HTTP 409 Conflict
+│   └── api/                    # Validação de regras de negócios no backend
 │
-├── client2/                  # [Cliente 2] ...
-│   └── ...
-└── client3/                  # [Cliente 3] ...
-    └── ...
+├── postman/                    # 🔐 Segurança e UI Otimista (Optimistic UI)
+│   ├── e2e/optimistic_ui.spec  # Prova o desalinhamento de estado (quando o Front mente ao usuário)
+│   └── api/                    # Autenticação de tokens de segurança
+│
+├── comptia/                    # ⚛️ Confiabilidade em React e Frontends Modernos
+│   ├── e2e/bug_regression.spec # Testes de Timeout de Hidratação e Spinners Infinitos
+│
+└── tavardt/                    # 🌍 Internacionalização e Acessibilidade
+    ├── e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
+    └── docs/                   # Mindmaps exploratórios e documentação de QA Manual
 ```
 
-## Tecnologias e Ferramentas
+## 🚀 Quick Start (Onboarding de Desenvolvedores)
 
-- **Planejamento:** Markdown, Guias de Cobertura e Estratégia de Qualidade.
-- **Automação Web UI:** Playwright com TypeScript (Pattern: Page Objects).
-- **Automação API:** Postman (Testes em coleções exportadas).
-- **Integração Contínua:** GitHub Actions para execução de testes em nuvem a cada alteração no código.
+Quer rodar estes testes na sua máquina? Leva menos de 2 minutos.
 
-## Objetivo
+**Pré-requisitos:** [Node.js](https://nodejs.org/) (v18+)
 
-Demonstrar as competências críticas exigidas no dia a dia de um profissional de QA:
-1. **Pensamento Crítico:** Saber O QUE testar antes de saber COMO testar (Casos Específicos e Limites).
-2. **Qualidade Técnica:** Código de automação limpo, estável e manutenível.
-3. **Comunicação:** Reporte eficiente de resultados e falhas documentadas com clareza.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/realleotavares/portfolio-qa.git
+cd portfolio-qa
+
+# 2. Instale as dependências (Clean install respeitando o package-lock)
+npm ci
+
+# 3. Instale os navegadores do Playwright
+npx playwright install --with-deps chromium
+
+# 4. Rode a suíte E2E Completa
+npx playwright test
+
+# 5. Visualize o Relatório Interativo
+npx playwright show-report
+```
+
+*Nota: Alguns testes de identidade do Postman podem ser ignorados localmente se a variável de ambiente `POSTMAN_SID` não for injetada no seu arquivo `.env` (Padrão ouro de Segurança/AppSec).*
+
+## 🎯 Competências Core Demonstradas
+
+1. **Previsão de Defeitos:** Testar a *Arquitetura* (Race Conditions, Optimistic UI) ao invés de apenas validar se o CSS de um botão está correto.
+2. **DevOps & CI/CD:** Pipeline robusta via GitHub Actions contendo *caching* inteligente de dependências, execução multicliente em paralelo, e deploy automático dos relatórios de teste via GitHub Pages.
+3. **Clean Code & Governança:** Histórico linear no Git, governado por *IDs Jira* (ex: `CPT-9045`) e *Semantic Commits* (Gitmojis).
 
 ---
-*Este portfólio está em constante evolução.*
+*Este portfólio é governado por rigorosos padrões de CI/CD e engenharia de software.*
