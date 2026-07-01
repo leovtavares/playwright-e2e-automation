@@ -16,25 +16,25 @@ This repository is living proof of my skills as a Software Development Engineer 
 This repository adopts an enterprise-level Monorepo pattern where tests are strictly isolated by "client" or "project", addressing specific modern application failure nodes.
 
 ```text
-playwright-e2e-automation/
-├── README.md                   # This document
-├── playwright.config.ts        # Global Playwright configuration with Monorepo setup
-├── .github/workflows/          # CI/CD Pipelines (Caching, GH Pages Deploy)
+📁 playwright-e2e-automation/
+├── 📄 README.md                   # This document
+├── 📄 playwright.config.ts        # Global Playwright configuration with Monorepo setup
+├── 📁 .github/workflows/          # CI/CD Pipelines (Caching, GH Pages Deploy)
 │
-├── luxury-store/               # E-commerce Concurrency & Inventory
-│   ├── e2e/checkout.spec.ts    # Tests Race Conditions and HTTP 409 Conflict handling
-│   └── api/                    # Backend inventory isolation tests
+├── 📁 luxury-store/               # E-commerce Concurrency & Inventory
+│   ├── 📄 e2e/checkout.spec.ts    # Tests Race Conditions and HTTP 409 Conflict handling
+│   └── 📁 api/                    # Backend inventory isolation tests
 │
-├── postman/                    # Security & Optimistic UI
-│   ├── e2e/optimistic_ui.spec  # Proves state misalignment (Frontend lying to user)
-│   └── api/                    # Security tokens and API auth logic
+├── 📁 postman/                    # Security & Optimistic UI
+│   ├── 📄 e2e/optimistic_ui.spec  # Proves state misalignment (Frontend lying to user)
+│   └── 📁 api/                    # Security tokens and API auth logic
 │
-├── comptia/                    # React & Modern Frontend Reliability
-│   ├── e2e/bug_regression.spec # Tests Hydration timeouts and infinite loading spinners
+├── 📁 comptia/                    # React & Modern Frontend Reliability
+│   ├── 📄 e2e/bug_regression.spec # Tests Hydration timeouts and infinite loading spinners
 │
-└── tavardt/                    # Internationalization & Accessibility
-    ├── e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
-    └── docs/                   # Exploratory mindmaps and QA mindset documentation
+└── 📁 tavardt/                    # Internationalization & Accessibility
+    ├── 📁 e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
+    └── 📁 docs/                   # Exploratory mindmaps and QA mindset documentation
 ```
 
 ## Live Quality Dashboard
@@ -99,25 +99,25 @@ Este repositório é a prova viva das minhas habilidades como Engenheiro de Qual
 Este repositório adota um padrão de Monorepo (nível Enterprise), onde os testes são isolados de forma estrita por "cliente" ou "projeto", abordando nós específicos de falhas em aplicações modernas.
 
 ```text
-playwright-e2e-automation/
-├── README.md                   # Este documento
-├── playwright.config.ts        # Configuração global do Playwright (Monorepo setup)
-├── .github/workflows/          # Pipelines CI/CD (Caching, Deploy no GH Pages)
+📁 playwright-e2e-automation/
+├── 📄 README.md                   # Este documento
+├── 📄 playwright.config.ts        # Configuração global do Playwright (Monorepo setup)
+├── 📁 .github/workflows/          # Pipelines CI/CD (Caching, Deploy no GH Pages)
 │
-├── luxury-store/               # E-commerce: Concorrência e Estoque
-│   ├── e2e/checkout.spec.ts    # Testes de Race Conditions e bloqueio HTTP 409 Conflict
-│   └── api/                    # Validação de regras de negócios no backend
+├── 📁 luxury-store/               # E-commerce: Concorrência e Estoque
+│   ├── 📄 e2e/checkout.spec.ts    # Testes de Race Conditions e bloqueio HTTP 409 Conflict
+│   └── 📁 api/                    # Validação de regras de negócios no backend
 │
-├── postman/                    # Segurança e UI Otimista (Optimistic UI)
-│   ├── e2e/optimistic_ui.spec  # Prova o desalinhamento de estado (quando o Front mente ao usuário)
-│   └── api/                    # Autenticação de tokens de segurança
+├── 📁 postman/                    # Segurança e UI Otimista (Optimistic UI)
+│   ├── 📄 e2e/optimistic_ui.spec  # Prova o desalinhamento de estado (quando o Front mente ao usuário)
+│   └── 📁 api/                    # Autenticação de tokens de segurança
 │
-├── comptia/                    # Confiabilidade em React e Frontends Modernos
-│   ├── e2e/bug_regression.spec # Testes de Timeout de Hidratação e Spinners Infinitos
+├── 📁 comptia/                    # Confiabilidade em React e Frontends Modernos
+│   ├── 📄 e2e/bug_regression.spec # Testes de Timeout de Hidratação e Spinners Infinitos
 │
-└── tavardt/                    # Internacionalização e Acessibilidade
-    ├── e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
-    └── docs/                   # Mindmaps exploratórios e documentação de QA Manual
+└── 📁 tavardt/                    # Internacionalização e Acessibilidade
+    ├── 📁 e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
+    └── 📁 docs/                   # Mindmaps exploratórios e documentação de QA Manual
 ```
 
 ## Dashboard de Qualidade (Ao Vivo)
