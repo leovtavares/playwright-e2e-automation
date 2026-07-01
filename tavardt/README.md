@@ -13,9 +13,9 @@ When analyzing `ag.tavardt.com`, I identified two critical business flows that c
 ## Project Structure
 
 - `/docs`: Contains the "QA Mindset" artifacts.
-  - `Plano_de_Testes.md`: High-level test coverage and risk assessment.
-  - `Casos_de_Teste.md`: Detailed scenario mapping (Positive, Negative, and Edge Cases).
-  - `Relatorio_de_Bugs.md`: Professional defect reporting demonstrating how I document and communicate issues.
+  - `0_test_plan.md`: High-level test coverage and risk assessment.
+  - `2_bdd_test_cases.md`: Detailed scenario mapping (Positive, Negative, and Edge Cases).
+  - `3_bug_report.md`: Professional defect reporting demonstrating how I document and communicate issues.
 - `/e2e`: UI Automation Scripts using **Playwright** (TypeScript). Tests browser-based interactions and DOM validations.
 - `/api`: Backend Automation using **Postman**. Contains JSON collections testing the form submission endpoints directly.
 
@@ -34,8 +34,8 @@ Ao analisar o site `ag.tavardt.com`, identifiquei dois fluxos de negócios crít
 ## Estrutura do Projeto
 
 - `/docs`: Contém os artefatos do "Mindset de QA".
-  - `Plano_de_Testes.md`: Cobertura de testes de alto nível e avaliação de riscos.
-  - `Casos_de_Teste.md`: Mapeamento detalhado de cenários (Caminhos Felizes, Negativos e Casos de Borda).
-  - `Relatorio_de_Bugs.md`: Reporte profissional de defeitos, demonstrando como eu documento e comunico problemas.
+  - `0_test_plan.md`: Cobertura de testes de alto nível e avaliação de riscos.
+  - `2_bdd_test_cases.md`: Mapeamento detalhado de cenários (Caminhos Felizes, Negativos e Casos de Borda).
+  - `3_bug_report.md`: Reporte profissional de defeitos, demonstrando como eu documento e comunico problemas.
 - `/e2e`: Scripts de Automação de UI usando **Playwright** (TypeScript). Testa interações baseadas no navegador e validações de DOM.
 - `/api`: Automação de Backend usando **Postman**. Contém coleções JSON testando os endpoints de submissão do formulário diretamente.
