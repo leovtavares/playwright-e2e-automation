@@ -1,7 +1,7 @@
 [🇺🇸 English](#english) | [🇧🇷 Português](#português)
 
 <a id="english"></a>
-# Client: CompTIA (www.comptia.org)
+# Client: CompTIA (comptia.org)
 
 Welcome to the specific testing directory for the **CompTIA** public portal. This project demonstrates my ability to audit production environments and isolate critical user acquisition blockers.
 
@@ -23,7 +23,7 @@ When exploring `comptia.org`, I focused on the core conversion funnel: the "Expl
 <br><br>
 
 <a id="português"></a>
-# Cliente: CompTIA (www.comptia.org)
+# Cliente: CompTIA (comptia.org)
 
 Bem-vindo ao diretório de testes do portal público da **CompTIA**. Este projeto demonstra minha habilidade em auditar ambientes de produção e isolar bloqueadores críticos de aquisição de usuários.
 
