@@ -32,6 +32,10 @@ This repository adopts an enterprise-level Monorepo pattern where tests are stri
 ├── 📁 comptia/                    # React & Modern Frontend Reliability
 │   ├── 📄 e2e/bug_regression.spec # Tests Hydration timeouts and infinite loading spinners
 │
+├── 📁 dio/                        # SPA Rendering & Asset Resolution
+│   ├── 📁 e2e/tests/              # Infinite loading and hydration timeout bugs
+│   └── 📁 docs/                   # Root cause analysis & bug reports
+│
 └── 📁 tavardt/                    # Internationalization & Accessibility
     ├── 📁 e2e/tests/              # WCAG (Axe-core), i18n routing, and contact flows
     └── 📁 docs/                   # Exploratory mindmaps and QA mindset documentation
