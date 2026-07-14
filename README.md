@@ -119,6 +119,10 @@ Este repositório adota um padrão de Monorepo (nível Enterprise), onde os test
 ├── 📁 comptia/                    # Confiabilidade em React e Frontends Modernos
 │   ├── 📄 e2e/bug_regression.spec # Testes de Timeout de Hidratação e Spinners Infinitos
 │
+├── 📁 dio/                        # Renderização SPA e Resolução de Assets
+│   ├── 📁 e2e/tests/              # Bugs de infinite loading e timeout de hidratação
+│   └── 📁 docs/                   # Root cause analysis e relatórios de bug
+│
 └── 📁 tavardt/                    # Internacionalização e Acessibilidade
     ├── 📁 e2e/tests/              # Rotas i18n, fluxo de contatos e testes WCAG (Axe-core)
     └── 📁 docs/                   # Mindmaps exploratórios e documentação de QA Manual
